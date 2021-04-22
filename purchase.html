@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+		Student name:   Duy Nguyen
+		Date:	        04/07/2021
+		File:	        purchase.html
+        Purpose:        Vicious Cycles Project
+-->
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Vicious Cycles - Online purchase form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #E7FBFB;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+	<!-- Header and Logo -->
+	<header>
+		<div id="banner"><img src="images/logo.png" alt="Vicious Cycles' Logo"></div>
+	</header>
+	
+	<!-- Main navigator -->
+	<nav>
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./products.html">Products</a></li>
+			<li><a href="./aboutus.html">About Us</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- The main content of the webpage -->
+	<main>
+		<section>
+			<h1>Online purchase</h1>
+			<!-- First article area -->
+			<article>
+				<form action="action_page.php">
+					<div class="row">
+						<div class="col-25">
+							<label for="fname">First Name</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="fname" name="firstname" placeholder="Your name...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="lname">Last Name</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lastname" placeholder="Your last name...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="address">Address</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="address" name="address" placeholder="Your address...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="phoneNo">Phone#</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="phoneNo" name="phoneNo" placeholder="Phone number...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="emailAddr">Email</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="emailAddr" name="emailAddr" placeholder="Email...">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">Contact type</div>
+						<div class="col-75">
+							<div class="row-inline">
+								<label>
+									<input type="checkbox" name="call"> Call
+								</label>
+								<label>
+									<input type="checkbox" name="text"> Text
+								</label>
+								<label>
+									<input type="checkbox" name="email"> Email
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">Delivery type</div>
+						<div class="col-75">
+							<div class="row-inline">
+								<label>
+									<input type="radio" id="delivery" name="deliveryType" value="Delivery" checked> Delivery
+								</label>
+								<label>
+									<input type="radio" id="pickup" name="deliveryType" value="Pickup"> Pickup
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="prodCond">Product's Condition</label>
+						</div>
+						<div class="col-75">
+							<select id="prodCond" name="prodCond">
+								<option value="australia">New</option>
+								<option value="canada">Pre-owned Certified</option>
+								<option value="usa">Used</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="prodDetail">Product detail</label>
+						</div>
+						<div class="col-75">
+							<textarea id="prodDetail" name="prodDetail" placeholder="Product detail..." style="height:200px"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="row-inline">
+							<input type="button" value="Back" onclick="window.history.back();">
+					  		<input type="submit" value="Submit">
+						</div>
+					</div>
+				  </form>
+			</article>
+		</section>
+	</main>
+
+	<!-- Webpage footer content -->
+	<footer>
+		<p>
+		Vicious Cycles <br>
+		123 Main St., Anywhere, NC 99999<br>
+		Phone: <a href="tel:+19191234567">(919) 123-4567</a> Fax: <a href="tel:+19171238901">(917) 123-8901</a><br>
+		<a href="https://www.twitter.com" target="_blank"><img src="./images/twitter_logo.png" alt="Twitter Logo"></a> <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook_logo.png" alt="Facebook Logo"></a>
+	</p>
+
+	</footer>
+
+	</div>
+	
+</body>
+</html>
